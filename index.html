@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<title>Residentie De Bottelaarhei</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: 0% 10%;
+  background-size: cover;
+  background-image: url("header.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+.w3-top{
+  overflow:hidden;
+}
+
+.w3-top a{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 15%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color:#fff!important;
+  background-color:#f44336!important;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  filter:sepia(50%);
+}
+
+#myBtn:hover {
+  color:#000!important;
+  background-color:#fdf5e6!important;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.w3-top .icon {
+  display: none;
+}
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .w3-top a{width:auto;} 
+  .w3-top a:not(:first-child) {display: none;}
+  .w3-top a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .w3-top.responsive {position: relative;}
+  .w3-top.responsive a.icon { 
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .w3-top.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    width:auto;
+  }
+} 
+
+
+</style>
+<body>
+
+<div class="w3-hide-small">
+<button onclick="topFunction()" id="myBtn" title="Top">&uarr;</button>
+</div>
+
+<div class="w3-bottom">
+  <div class="w3-display-bottomleft w3-padding-large">
+  </div>
+</div>
+
+
+<!-- Links (sit on top) -->
+<div class="w3-top" id="topnav">
+  <div class="w3-row w3-padding w3-deep-orange w3-sepia-min">
+      <a href="#huur" class="w3-button w3-block w3-deep-orange w3-hover-dark-gray">TE HUUR</a>
+      <a href="#over" class="w3-button w3-block w3-deep-orange w3-hover-dark-gray">DE RESIDENTIE</a>
+      <a href="#contact" class="w3-button w3-block w3-deep-orange w3-hover-dark-gray">CONTACT</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small margin-top:10%">
+    <span class="w3-tag w3-amber" style="font-size:20px">Afspraak om te bezichtigen of extra info? 0456/ 41 88 85</span>
+  </div>
+  <div class="w3-display-bottomleft w3-center w3-hide-small" style="margin-bottom:3%; margin-left:5%">
+    <span class="w3-text-white" style="font-size:75px">De Bottelaarhei</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large w3-hide-small margin-top:10%">
+    <span class="w3-tag w3-amber" style="font-size:20px">Berlaar-Heikant</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-light-grey w3-large">
+
+<!-- For rent Container -->
+<div class="w3-container" id="huur">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TE HUUR: Appartement 1ste verdieping</span></h5>
+
+<p>Ruim, licht en energiezuinig appartement met twee slaapkamers. Het ruime terras kijkt uit op de mooie achterliggende tuin en is door zijn zuidelijke ligging de hele dag zonnig.</p> 
+
+<p>Het appartement is nog in nieuwstaat, voldoet aan de hedendaagse comfort vereisten en is afgewerkt met hoogkwaliteits materialen.</p> 
+
+<p>Het appartement is voorzien van een ruime garage.</p>
+
+<p> Indeling: Twee slaapkamers, toilet, leefruimte, keuken en eetkamer, badkamer met inloopdouche, 2 bergingen, ruim terras met berging, garage.</p>
+
+<p> Meer info? Neem telefonisch contact op via 0456/ 41 88 85. </p>
+<div class = "w3-hide-small">
+<img src="eetkamer.jpg" alt="Eetkamer"  style="width:100%">
+</div>
+<br>
+<div class = "w3-hide-small">
+<img src="leefruimte.jpg" alt="Leefruimte"  style="width:100%">
+</div>
+<br>
+<div class = "w3-hide-small">
+<img src="keuken.jpg" alt="Keuken" style="width:100%">
+</div>
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="over">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">RESIDENTIE DE BOTTELAARHEI</span></h5>
+<p>Residentie De Bottelaarhei is een recente meergezinswoning met vijf wooneenheden in Berlaar-Heikant. De naam relateert aan Berlaar-Heikant, de Hei in de volksmond, en de vroegere activiteit op dezelfde locatie, namelijk het bottelen van bier bij de voormalige biersteker. 
+
+<p>De residentie heeft goede verbindingsmogelijkheden met de auto en het openbaar vervoer (bushalte op wandelafstand en station op 1.5 km). Alle winkels om aan de basisbehoeften te voorzien zijn binnen wandelafstand.</p>
+
+<div class = "w3-hide-small">
+<img src="achtergevel2.jpg" alt="Achtergevel"  style="width:100%">
+</div>
+<br>
+<div class = "w3-hide-small">
+<img src="tuin.jpg" alt="Tuin"  style="width:100%">
+</div>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content w3-center" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
+    <p>Wil u een afspraak maken om een appartement te bezichtigen of vrijblijvend bijkomende informatie vragen, neem dan telefonisch contact op via <br> 0456/ 41 88 85 </p>
+<br>
+<p> Adres: Aarschotsebaan 139, Berlaar-Heikant </p>
+<div class="w3-hide-small">	
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.349848216604!2d4.662130015524888!3d51.08355074942546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1581c54373f11%3A0xde377b38727da315!2sAarschotsebaan%20139%2C%202590%20Berlaar!5e0!3m2!1snl!2sbe!4v1623873501521!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+
+  </div>
+</div>
+
+</div>
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<!-- Footer 
+<footer class="w3-center w3-light-grey w3-padding-48 w3-tiny">
+
+</footer> -->
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("topnav");
+  if (x.className === "w3-top") {
+    x.className += " responsive";
+  } else {
+    x.className = "w3-top";
+  }
+}
+</script>
+
+
+</body>
+</html>
